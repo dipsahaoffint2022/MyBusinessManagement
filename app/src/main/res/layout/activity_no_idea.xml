@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D1C3E1"
+    android:orientation="vertical"
+    tools:context=".View_Product">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="84dp">
+
+        <SearchView
+            android:id="@+id/searchViewInput"
+            android:layout_width="356dp"
+            android:layout_height="60dp"
+            android:background="@drawable/searcview_bg"
+            android:iconifiedByDefault="false"
+            android:queryHint="search items"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="428dp"
+        android:orientation="horizontal">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/RecView"
+            android:layout_width="match_parent"
+            android:layout_height="425dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="118dp"
+        android:layout_marginBottom="4dp"
+        android:orientation="horizontal">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="115dp"
+            android:background="#4CAF50"
+            android:backgroundTint="#8BC34A"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="5dp"
+            app:cardUseCompatPadding="true">
+
+            <RelativeLayout
+                android:layout_width="401dp"
+                android:layout_height="104dp"
+                android:background="#F2E7FE">
+
+                <TextView
+                    android:id="@+id/set_p_price"
+                    android:layout_width="123dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toRightOf="@id/set_p_name"
+                    android:fontFamily="@font/anton"
+                    android:paddingTop="25dp"
+                    android:text="000"
+                    android:textAlignment="center"
+                    android:textColor="#BB86FC"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/set_p_name"
+                    android:layout_width="109dp"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/alfa_slab_one"
+                    android:paddingTop="25dp"
+                    android:text="Total="
+                    android:textAlignment="center"
+                    android:textColor="#BB86FC"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="3dp"
+                    android:layout_toRightOf="@id/set_p_price"
+                    android:fontFamily="@font/anton"
+                    android:paddingTop="20dp"
+                    android:text="₹"
+                    android:textAlignment="center"
+                    android:textColor="#BB86FC"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <ImageButton
+                    android:id="@+id/check"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="21dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_toRightOf="@id/textView10"
+                    android:backgroundTint="#9D73A5"
+                    android:contentDescription="@string/app_name"
+                    android:fontFamily="@font/alfa_slab_one"
+                    android:minHeight="48dp"
+                    android:text="CheckOut"
+                    android:textSize="12sp"
+                    app:srcCompat="@drawable/ic_baseline_library_add_check_24" />
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+
+</LinearLayout>

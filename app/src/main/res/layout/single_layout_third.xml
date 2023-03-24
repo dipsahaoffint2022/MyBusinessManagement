@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFE8E8"
+    android:backgroundTint="#D1C3E1"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="5dp"
+    app:cardUseCompatPadding="true"
+    app:contentPaddingBottom="10dp"
+    app:contentPaddingLeft="10dp"
+    app:contentPaddingRight="10dp"
+    app:contentPaddingTop="10dp">
+
+    <RelativeLayout
+        android:id="@+id/rel1"
+        android:layout_width="325dp"
+        android:layout_height="247dp"
+        android:background="@drawable/card"
+        android:backgroundTint="#00c2cb"
+        tools:ignore="InvalidId">
+
+
+        <TextView
+            android:id="@+id/p_name"
+            android:layout_width="203dp"
+            android:layout_height="58dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="3dp"
+            android:background="@drawable/card"
+            android:ems="10"
+            android:paddingTop="15dp"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/p_price"
+            android:layout_width="204dp"
+            android:layout_height="61dp"
+            android:layout_below="@id/p_name"
+            android:layout_alignEnd="@+id/set_price"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="99dp"
+            android:layout_marginRight="6dp"
+            android:background="@drawable/card"
+            android:ems="10"
+            android:paddingTop="15dp"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="36dp"
+            android:layout_height="42dp"
+            android:layout_below="@id/p_name"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="25dp"
+            android:layout_toEndOf="@+id/p_qty"
+            android:layout_toRightOf="@+id/p_price"
+            android:text="₹"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/p_price"
+            app:layout_constraintTop_toBottomOf="@+id/p_name" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/p_qty"
+            android:layout_width="202dp"
+            android:layout_height="85dp"
+            android:layout_below="@+id/p_price"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            app:boxBackgroundColor="#FF9999"
+            app:boxBackgroundMode="outline"
+            app:counterEnabled="true"
+            app:counterMaxLength="5"
+            app:endIconMode="clear_text"
+            app:helperText="Required*"
+            app:helperTextTextColor="#5E130E"
+            app:startIconDrawable="@drawable/ic_baseline_balance_25">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/p1_qty"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:background="@drawable/text_input_bg"
+                android:hint="Enter Quantity"
+                android:inputType="number"
+                android:maxLength="5"
+                android:paddingTop="10dp"
+                android:textSize="24sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/p_unit"
+            android:layout_width="48dp"
+            android:layout_height="43dp"
+            android:layout_below="@id/p_price"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="16dp"
+            android:layout_toRightOf="@id/p_qty"
+            android:background="@drawable/card"
+            android:fontFamily="sans-serif-black"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="32dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/p_price"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="21dp"
+            android:layout_toRightOf="@+id/p_unit"
+            android:contentDescription="@string/app_name"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@id/p_unit"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/set_price"
+            style="@android:style/Widget.Material.ImageButton"
+            android:layout_width="66dp"
+            android:layout_height="58dp"
+            android:layout_below="@id/p_name"
+            android:layout_marginLeft="-62dp"
+            android:layout_marginTop="-58dp"
+            android:layout_toRightOf="@id/spinner"
+            android:background="@drawable/searcview_bg"
+            android:backgroundTint="#55426C"
+            android:baseline="?attr/dialogCornerRadius"
+            android:contentDescription="set"
+            android:fadingEdge="vertical"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
+            android:outlineProvider="paddedBounds"
+            android:overScrollMode="always"
+            android:theme="@style/CardView.Dark"
+            app:srcCompat="@drawable/ic_baseline_add_card_24" />
+
+
+    </RelativeLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="334dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="250sp"
+        android:backgroundTint="#D1C3E1">
+
+        <RelativeLayout
+            android:id="@+id/rel2"
+            android:layout_width="323dp"
+            android:layout_height="60dp"
+            android:background="@drawable/card"
+            tools:ignore="InvalidId">
+
+            <TextView
+                android:id="@+id/prod_name"
+                android:layout_width="103dp"
+                android:layout_height="match_parent"
+                android:fontFamily="sans-serif-black"
+                android:paddingLeft="10dp"
+                android:paddingTop="20dp"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/prod_price"
+                android:layout_width="91dp"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/prod_name"
+                android:fontFamily="sans-serif-black"
+                android:paddingTop="20dp"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/prod_weight"
+                android:layout_width="72dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2dp"
+                android:layout_toRightOf="@+id/prod_price"
+                android:fontFamily="sans-serif-black"
+                android:paddingLeft="14dp"
+                android:paddingTop="20dp"
+                android:textSize="20sp" />
+
+            <ImageButton
+                android:id="@+id/delete_prod"
+                android:layout_width="43dp"
+                android:layout_height="40dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="9dp"
+                android:layout_marginTop="11dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="9dp"
+                android:layout_toRightOf="@id/prod_weight"
+                android:background="@drawable/searcview_bg"
+                android:contentDescription="@string/app_name"
+                app:srcCompat="@drawable/ic_baseline_delete_24" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.cardview.widget.CardView>
+

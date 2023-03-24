@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="5dp"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:id="@+id/RecView"
+        android:layout_width="398dp"
+        android:layout_height="109dp">
+
+        <TextView
+            android:id="@+id/set_p_price"
+            android:layout_width="74dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@id/set_p_name"
+            android:fontFamily="casual"
+            android:paddingTop="25dp"
+            android:text="000"
+            android:textAlignment="center"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/set_p_name"
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:fontFamily="casual"
+            android:paddingTop="25dp"
+            android:text="Default"
+            android:textAlignment="center"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/set_p_qty"
+            android:layout_width="109dp"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/set_p_price"
+            android:paddingTop="25dp"
+            android:text="qty"
+            android:textAlignment="center"
+            android:textSize="24sp" />
+
+        <ImageButton
+            android:id="@+id/set_p_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="53dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="32dp"
+            android:layout_toRightOf="@+id/set_p_qty"
+            android:contentDescription="@string/app_name"
+            app:srcCompat="@drawable/ic_baseline_delete_24" />
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

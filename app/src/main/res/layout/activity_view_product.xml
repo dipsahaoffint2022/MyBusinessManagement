@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D1C3E1"
+    android:backgroundTint="#D1C3E1"
+    android:orientation="vertical"
+    tools:context=".View_Product">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="84dp">
+
+        <SearchView
+            android:id="@+id/searchViewInput"
+            android:layout_width="356dp"
+            android:layout_height="60dp"
+            android:background="@drawable/searcview_bg"
+            android:iconifiedByDefault="false"
+            android:queryHint="search items"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="552dp"
+        android:orientation="vertical">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/RecView"
+            android:layout_width="410dp"
+            android:layout_height="match_parent"
+            android:background="#D1C3E1"
+            android:backgroundTint="#D1C3E1" />
+    </LinearLayout>
+
+</LinearLayout>

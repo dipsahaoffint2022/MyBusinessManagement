@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "530442271266",
+    "firebase_url": "https://my-business-management-d6077-default-rtdb.firebaseio.com",
+    "project_id": "my-business-management-d6077",
+    "storage_bucket": "my-business-management-d6077.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:530442271266:android:d87ecccdcf83b7fb01287b",
+        "android_client_info": {
+          "package_name": "com.example.mybusinessmanagement"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "530442271266-22v4i9ef250vg86i4m18pdc8a8957uug.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAng54EgvsrH9xznsuGka6eGIpkG2nASNM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "530442271266-22v4i9ef250vg86i4m18pdc8a8957uug.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

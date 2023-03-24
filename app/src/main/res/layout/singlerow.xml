@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFE8E8"
+    android:backgroundTint="#D1C3E1"
+    app:cardBackgroundColor="#7C7061"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="5dp"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="351dp"
+        android:layout_height="190dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/card"
+        android:backgroundTint="#00c2cb">
+
+        <Button
+            android:id="@+id/delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/set_p_name"
+            android:layout_alignStart="@+id/set_p_name"
+            android:layout_marginStart="3dp"
+            android:layout_marginTop="1dp"
+            android:backgroundTint="#9B6ED3"
+            android:fontFamily="serif"
+            android:text="Delete"
+            android:textSize="20sp"
+            app:cornerRadius="?attr/dialogPreferredPadding" />
+
+        <TextView
+            android:id="@+id/set_p_price"
+            android:layout_width="74dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/set_p_name"
+            android:fontFamily="@font/alfa_slab_one"
+            android:paddingTop="25dp"
+            android:text="000"
+            android:textAlignment="center"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/set_p_name"
+            android:layout_width="202dp"
+            android:layout_height="99dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/alfa_slab_one"
+            android:paddingTop="25dp"
+            android:text="Default"
+            android:textAlignment="center"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="25dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/set_p_price"
+            android:fontFamily="@font/butcherman"
+            android:paddingTop="20dp"
+            android:text="₹"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="34sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/set"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/set_p_name"
+            android:layout_alignStart="@+id/set_p_name"
+            android:layout_marginStart="145dp"
+            android:layout_marginTop="1dp"
+            android:backgroundTint="#9B6ED3"
+            android:fontFamily="serif"
+            android:text="Update"
+            android:textSize="20sp"
+            app:cornerRadius="?attr/dialogPreferredPadding" />
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
